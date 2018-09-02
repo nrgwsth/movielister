@@ -1,4 +1,4 @@
-Open `index.html` in any browser or see it [here]()
+Open `index.html` in any browser or see it [here](https://nrgwsth.github.io/movielister)
 
 Uses only vanilla js.
 Uses modular code, bundled with webpack.
