@@ -1,0 +1,163 @@
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.app{
+	background: #00d1b2;
+}
+
+.logoContainer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.logoIcon{
+	font-size: 3em;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.logoIcon i {
+	font-size: 3em;
+}
+
+.searchInput{
+	width: 80%;
+	max-width: 700px;
+	min-width: 300px;
+}
+
+.searchWrapper{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.body{
+	margin-top: 20px !important;
+	position: relative;
+	min-height: calc(100vh - 180px);
+}
+
+.hidden{
+	display: none !important;
+}
+
+.loaderWrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 600px;
+	width: 100%;
+}
+
+.loaderoverlay{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background: #00d1b2;
+}
+
+.loadericon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3em;
+	z-index: 3;
+}
+
+.loader{
+	width: 2em;
+	height: 2em;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.smallerTags{
+	transform: scale(0.8);
+}
+
+.searchoptions{
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s;
+}
+
+.searchoptions{
+	color: #fff;
+}
+
+.actions{
+	padding: 0;
+	flex-direction: row;
+	display: flex;
+	cursor: pointer;
+	margin-left: auto;
+	margin-bottom:3px!important;
+}
+
+.filters{
+	padding: 5px;
+	display: flex;
+}
+
+.sortup, .sortdown{
+	padding: 5px;
+}
+
+
+.sortup.active, .sortdown.active{
+	background: #eee;
+}
+
+.searchWrapper:hover > .searchoptions{
+	height: 24px;
+}
+
+
+.noResultsMsg{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+        margin-top: 20%;
+}
+
+
+.imdb{
+	display: inline;
+}
+
+.language{
+	margin-right: 15px;
+}
+
+.movieboxlevel{
+	margin-bottom:5px!important;
+}
+
+
+.footer{
+	position: fixed;
+    z-index: 4;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    background: #fff;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
