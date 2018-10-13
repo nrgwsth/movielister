@@ -2,6 +2,8 @@ import Header from "./Header.js"
 import MovieList from "./MovieList.js"
 import Loader from "./Loader.js"
 
+import data from "./data.json"
+
 class App{
 	constructor(){
 		this.store = {}
@@ -77,11 +79,18 @@ class App{
 	}
 
 	fetchData(){
+		debugger
 		this.store.loading = true
-		fetch("http://starlord.hackerearth.com/movieslisting").then(d=>d.json()).then(d=>{
-			this.store.movieList = d
+		//mock api call
+		setTimeout(()=>{
+			this.store.movieList = data
 			this.store.loading = false
-		})
+		}, 1000)
+
+		// fetch("http://starlord.hackerearth.com/movieslisting").then(d=>d.json()).then(d=>{
+		// 	this.store.movieList = d
+		// 	this.store.loading = false
+		// })
 	}
 
 	forceUpdate(){

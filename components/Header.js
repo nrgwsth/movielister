@@ -34,7 +34,7 @@ class Header {
 				<div class="searchWrapper">
 					<div class="field searchInput">
 					  <div class="control">
-					    <input class="input" type="text" placeholder="Search...">
+					    <input class="input" type="text" placeholder="Press enter to search...">
 					  </div>
 					</div>
 					<div class="searchoptions">
